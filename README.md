@@ -56,8 +56,8 @@ python frame2map_gsimap.py video_file.MP4 output_dir [options]
 - OpenStreetMapのデータを利用しています
 
 ## 開発者
-- Kei Yoshiyama
-- 高知工科大学 システム工学群
+- 山本義幸
+- 愛知工業大学工学部社会基盤学科
 
 ## コントリビューション
 1. Forkする
