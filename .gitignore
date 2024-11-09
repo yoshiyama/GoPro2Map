@@ -1,0 +1,6 @@
+*.mp4
+*.MP4
+*.Identifier
+cache/
+output/
+temp_metadata/
