@@ -7,6 +7,14 @@ GoProで撮影した映像からGPSデータを抽出し、地理院地図上に
 - フレームを一定間隔で切り出し
 - 地理院地図上に軌跡とフレーム画像をマッピング
 
+## 動作環境
+- Windows 11 + WSL2 + Ubuntu
+  - Windows 11: 開発・テスト環境
+  - WSL2: Windows Subsystem for Linux 2
+  - Ubuntu: Linux環境
+
+その他の環境での動作は未確認です。
+
 ## Requirements
 - Python 3.8以上
 - ExifTool
@@ -21,7 +29,7 @@ git clone git@github.com:yoshiyama/GoPro2Map.git
 # 依存パッケージのインストール
 pip install -r requirements.txt
 
-# ExifToolのインストール（Ubuntuの場合）
+# ExifToolのインストール（Ubuntu/WSL2の場合）
 sudo apt-get install exiftool
 ```
 
@@ -73,6 +81,9 @@ python frame2map_gsimap.py video_file.MP4 output_dir [options]
   - OpenCVのバージョンを確認してください
 - 地図表示に問題がある場合
   - ブラウザのコンソールでエラーを確認してください
+- WSL2特有の問題
+  - WSL2とWindows間のファイルパスの違いに注意してください
+  - WSL2からWindows側のブラウザでHTMLを開く場合は、Windowsのパスに変換が必要な場合があります
 
 ## 更新履歴
 - v1.0.0: 初期リリース
