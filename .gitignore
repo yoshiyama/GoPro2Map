@@ -3,6 +3,6 @@
 *.Identifier
 cache/
 output/
+output_frames/
 temp_metadata/
 .idea/
-
